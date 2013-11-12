@@ -8,6 +8,7 @@
 * Fix: resource groupings for prefixed APIs - [@aew](https://github.com/aew).
 * Fix: hide_documentation_path on prefixed APIs - [@spier](https://github.com/spier).
 * Adding ability to specify a nickname for an endpoint - [@lhorne](https://github.com/lhorne).
+* Adding void and list[] types to responseClass - [@lhorne](https://github.com/lhorne).
 
 ### 0.6.0 (June 19, 2013)
 
