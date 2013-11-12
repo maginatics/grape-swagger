@@ -107,6 +107,7 @@ module Grape
                       parse_params(route.route_params, route.route_path, route.route_method)
                 }
                 operations.merge!({:responseClass => route.route_entity.to_s.split('::')[-1]}) if route.route_entity
+                operations[:nickname] = route.route_nickname if route.route_nickname
                 operations.merge!({:errorResponses => http_codes}) unless http_codes.empty?
                 {
                   :path => parse_path(route.route_path, api_version),
